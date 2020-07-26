@@ -6,11 +6,14 @@ import App from './components/App';
 import StorePicker from "./components/StorePicker";
 import NotFound from './components/NotFound';
 
+const repo = `/${window.location.pathname.split('/')[1]}`;
+
 class Root extends React.Component {
     render() {
         return (
             <div>
-                <BrowserRouter>
+                {/* basename for deploying and knowing the all the items will be from Sea-Food-Store/ */}
+                <BrowserRouter basename={repo}>
                         <div>
                             <Switch>
                                 {/* In new versions match is changed to route and miss had been discarded.

@@ -1,0 +1,3 @@
+[submodule "build/Sea-Food-Store"]
+	path = build/Sea-Food-Store
+	url = https://github.com/parth-27/Sea-Food-Store
